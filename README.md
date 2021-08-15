@@ -8,21 +8,35 @@ AlgaLog - Consiste em uma API de entregas para uma empresa de logística fictíc
 
 ## :rocket: Conceitos e tecnologias
 
-✔️ Java e Orientação a Objetos
+✔️ Java and Spring Boot Framework (Controller, Configuration, Service, Repository)
 
-✔️ Spring Framework (Controller, Configuration, Service, Repository)
+✔️ Bean Validation and Validation Groups
 
-✔️ Bean Validation
+✔️ Spring Data JPA
 
 ✔️ Assembler e DTO (Model e Input)
 
+✔️ Domain Model and Representation Model
+
+✔️ Domain Services
+
 ✔️ API Exception Handler
 
+✔️ Content Negociation
+
+✔️ HTTP Methods and Status
+
+✔️ Date Format UTC
+
 ✔️ Lombok
+
+✔️ ModelMapper
 
 ✔️ MySQL
 
 ✔️ Postman
+
+✔️ Flyway
 
 ## :phone: Contato
 
