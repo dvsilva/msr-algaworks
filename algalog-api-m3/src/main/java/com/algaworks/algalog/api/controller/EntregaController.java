@@ -40,7 +40,6 @@ public class EntregaController {
 	public EntregaModel solicitar(@Valid @RequestBody EntregaInput entregaInput) {
 		Entrega novaEntrega = entregaAssembler.toEntity(entregaInput);
 		Entrega entregaSolicitada = solicitacaoEntregaService.solicitar(novaEntrega);
-		
 		return entregaAssembler.toModel(entregaSolicitada);
 	}
 	

@@ -17,8 +17,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import com.algaworks.algalog.domain.exception.NegocioException;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -35,6 +33,9 @@ public class Entrega {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+//	@Valid
+//	@NotNull
+//	@ConvertGroup(from = Default.class, to = ValidationGroups.ClienteId.class)
 	@ManyToOne
 	private Cliente cliente;
 	

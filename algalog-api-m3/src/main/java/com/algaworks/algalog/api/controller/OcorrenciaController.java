@@ -34,20 +34,14 @@ public class OcorrenciaController {
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public OcorrenciaModel registrar(@PathVariable Long entregaId,
-			@Valid @RequestBody OcorrenciaInput ocorrenciaInput) {
-		
-		Ocorrencia ocorrenciaRegistrada = registroOcorrenciaService
-				.registrar(entregaId, ocorrenciaInput.getDescricao());
-		
+	public OcorrenciaModel registrar(@PathVariable Long entregaId, @Valid @RequestBody OcorrenciaInput ocorrenciaInput) {
+		Ocorrencia ocorrenciaRegistrada = registroOcorrenciaService.registrar(entregaId, ocorrenciaInput.getDescricao());
 		return ocorrenciaAssembler.toModel(ocorrenciaRegistrada);
-		
 	}
 	
 	@GetMapping
 	public List<OcorrenciaModel> listar(@PathVariable Long entregaId) {
 		Entrega entrega = buscaEntregaService.buscar(entregaId);
-		
 		return ocorrenciaAssembler.toCollectionModel(entrega.getOcorrencias());
 	}
 	
